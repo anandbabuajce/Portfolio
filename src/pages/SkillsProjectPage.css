@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+.skills-projects-page {
+  background: #111;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 60px 5%;
+  min-height: 100vh;
+  margin-top: -130px;
+  margin-bottom: -70px;
+  animation: fadeIn 0.7s ease-in-out forwards;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.skills-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #ff6700;
+  margin-bottom: -20px;
+  text-align: left;
+}
+
+/* Split Layout */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skills-left {
+  flex: 1 1 60%;
+  max-width: 600px;
+}
+
+.skills-right {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skill-bar {
+  margin-bottom: 20px;
+}
+
+.skill-bar h2 {
+  font-size: .9rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.progress-container {
+  width: 100%;
+  background: #7d7c7c;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #ff6700;
+  transition: width 1s ease;
+  border-radius: 30px;
+}
+
+.show-button {
+  margin-left: 280px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #ff6700;
+  color: #ff6700;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.show-button:hover {
+  background-color: #ff6700;
+  color: #111;
+}
+
+.additional-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-left: 120px;
+}
+
+.additional-skills span {
+  background-color: #111;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease;
+}
+
+.additional-skills span:hover {
+  transform: scale(1.05);
+  background: #ff6700;
+}
+
+/* Projects Section */
+.projects-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #ff6700;
+  margin-bottom: 24px;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 103, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #ffaa4a;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1.05rem;
+  color: #ccc;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.project-card a {
+  color: #ff6700;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #ffaa4a;
+  text-decoration: underline;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .skills-right {
+    align-items: center;
+  }
+
+  .skills-title,
+  .projects-section h2 {
+    text-align: center;
+  }
+
+  .show-button {
+    align-self: center;
+  }
+
+  .additional-skills {
+    justify-content: center;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=EB+Garamond:wght@700&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #111 60%, #1c1c1c 80%, #ff6700 100%);
+  padding: 20px 5%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.6s ease-in-out, box-shadow 0.4s ease;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.logo,
+.navbar h1 {
+  color: #ff6700;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s ease;
+  font-family: 'EB Garamond', serif; /* Classic and elegant font */
+  letter-spacing: 1.5px;
+}
+
+.logo:hover,
+.navbar h1:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  transition: gap 0.3s ease;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.nav-links a::after,
+.nav-links a:hover::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff6700;
+  transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+.nav-links a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.nav-links .active {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}

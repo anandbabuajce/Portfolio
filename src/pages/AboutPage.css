@@ -1,0 +1,64 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+.about-page {
+  background: #111;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 60px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -230px; /* Adjusted to remove the gap */
+  margin-bottom: -70px;
+  animation: fadeIn 0.7s ease-in-out forwards;
+  opacity: 0;
+}
+
+.about-content {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-page h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: #ff6700;
+  margin-bottom: 0px;
+}
+
+.about-page p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.8;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-page p:hover {
+  color: #cbcbcb;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-page {
+    padding: 40px 24px;
+    text-align: center;
+  }
+
+  .about-page h2 {
+    font-size: 2rem;
+  }
+
+  .about-page p {
+    font-size: 1.05rem;
+  }
+}
