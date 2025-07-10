@@ -60,16 +60,24 @@ const SkillsProjectsPage = () => {
         <h2>PROJECTS</h2>
 
         <div className="project-card">
-          <h3>SkillBridge</h3>
-          <p>A web platform that connects daily wage workers with employers. Built with HTML, CSS, JavaScript, Python Flask, and MongoDB.</p>
-          <a href="https://github.com/anandbabuajce" target="_blank" rel="noreferrer">View Project</a>
+          <h3>Vox-Helexia</h3>
+          <p>An e-commerce platform for sports items built with ReactJS and Spring Boot. Features scalable UI and secure backend integration.</p>
+          <a href="https://react-js-git-main-anand-babus-projects-52f07f70.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
         </div>
 
         <div className="project-card">
-          <h3>Vox-Helexia</h3>
-          <p>An e-commerce platform for sports items built with ReactJS and Spring Boot. Features scalable UI and secure backend integration.</p>
-          <a href="https://github.com/anandbabuajce" target="_blank" rel="noreferrer">View Project</a>
+          <h3>ShopLogo</h3>
+          <p>An e-commerce platform for shopping built with ReactJS and Spring Boot. Features user-friendly design and secure backend integration.</p>
+          <a href="https://ecommerce-git-main-anand-babus-projects-52f07f70.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
         </div>
+
+        <div className="project-card">
+          <h3>SkillBridge</h3>
+          <p>A web platform that connects daily wage workers with employers. Built with HTML, CSS, JavaScript, Python Flask, and MongoDB.</p>
+          <a href="https://github.com/anandbabuajce/SkillBridge" target="_blank" rel="noreferrer">View Project</a>
+        </div>
+
+        
       </div>
     </section>
   );
