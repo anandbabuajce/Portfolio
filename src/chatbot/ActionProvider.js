@@ -33,12 +33,17 @@ class ActionProvider {
     this.updateBotState(msg);
   }
 
-  handleProjects() {
-    const msg = this.createChatBotMessage(
-      "SkillBridge: A web app connecting daily wage workers to employers. Also built Vox-Helexia: an e-commerce site for sports gear using React + Spring Boot."
-    );
-    this.updateBotState(msg);
-  }
+ handleProjects() {
+  const msg = this.createChatBotMessage(
+    "Projects:\n" +
+    "• Vox-Helexia – Sports e-commerce site (React + Spring Boot)\n" +
+    "• VenomShield Kerala – Real-time anti-venom locator\n" +
+    "• SkillBridge – Worker-employer platform (Flask + MongoDB)\n" +
+    "• ShopLogo – Shopping site (React + Spring Boot)\n"
+  );
+  this.updateBotState(msg);
+}
+
 
   handleContact() {
     const msg = this.createChatBotMessage(

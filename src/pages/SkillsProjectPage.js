@@ -65,6 +65,12 @@ const SkillsProjectsPage = () => {
           <a href="https://react-js-git-main-anand-babus-projects-52f07f70.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
         </div>
 
+         <div className="project-card">
+          <h3>VENOMSHIELD-KERALA</h3>
+          <p>A real-time, location-based web application that enables users to locate nearby hospitals across Kerala with available anti-venom stock, featuring district-based filtering, proximity sorting, and a responsive ReactJS frontend integrated with a Spring Boot backend.</p>
+          <a href="https://github.com/anandbabuajce/Venomshield-Kerala" target="_blank" rel="noreferrer">View Project </a>
+        </div>
+
         <div className="project-card">
           <h3>ShopLogo</h3>
           <p>An e-commerce platform for shopping built with ReactJS and Spring Boot. Features user-friendly design and secure backend integration.</p>
