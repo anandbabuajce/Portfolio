@@ -16,6 +16,11 @@
   opacity: 0;
 }
 
+.about-content p{
+    text-align: justify;
+    line-height: 1.8;
+}
+
 .about-content {
   max-width: 1000px;
   display: flex;

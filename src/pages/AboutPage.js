@@ -6,16 +6,17 @@ const AboutPage = () => {
     <section className="about-page">
       <div className="about-content">
         <h2>About Me</h2>
+
         <p>
-          I’m a passionate Computer Science student with a strong foundation in full-stack development and real-world problem solving.
-          I built SkillBridge, a platform that connects daily wage workers with employers.
+          I enjoy learning new technologies and applying them to practical projects that solve real-world problems. My interest in software development started through exploring web technologies and gradually expanded into AI-based applications and modern development tools.
         </p>
+
         <p>
-          Through my internship at Infospica, I gained hands-on experience in software development workflows. 
-          I’ve also contributed to initiatives like the NSS Road Safety campaign and national-level hackathons including NASA Space App Challenge and SAP Hackfest.
+          I like working on projects that combine problem-solving, user-focused design, and technical implementation. Through academic projects, internships, and self-learning, I have gained experience working with ReactJS, Python, databases, and backend technologies while improving my ability to work collaboratively in team environments.
         </p>
+
         <p>
-          My skills include ReactJS, JavaScript, Spring Boot, MySQL, MongoDB, and a commitment to building scalable, impactful solutions.
+          I am continuously improving my technical skills, that help me grow as a developer. I am interested in opportunities where I can improve my development skills, contribute to real-world projects, and gain valuable industry experience.
         </p>
       </div>
     </section>
